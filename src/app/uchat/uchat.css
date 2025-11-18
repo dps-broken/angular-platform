@@ -1,0 +1,23 @@
+.uchat-wrapper{
+    height: 800px;
+    width: 1500px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    /* overflow-y: auto; */
+    position: relative;
+    overflow: hidden;
+
+    /* p{
+        color: #ffffff;
+        font-weight: bolder;
+        background-color: rgb(135, 95, 10);
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+}
+.react-app-wrapper-ng{
+    height: 100%;
+    width: 100%;
+}

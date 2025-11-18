@@ -1,0 +1,9 @@
+<div class="home-wrapper">
+    <button class="launch-btn" (click)="toggleUchat()">Launch uChat</button>
+    <div class="fullscreen-container">
+        <h1 class="animated-angular">Angular</h1>
+    </div> <router-outlet></router-outlet>
+    <div *ngIf="showUchat" [class.uchat-slide-in]="showUchat">
+        <app-uchat></app-uchat>
+    </div>
+</div>

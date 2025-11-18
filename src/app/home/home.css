@@ -1,0 +1,101 @@
+.home-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    /* Un color de fondo oscuro similar al de la imagen */
+    overflow: hidden;
+    /* Oculta cualquier desbordamiento */
+}
+
+.launch-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #101010;
+    color: #3339d7;
+    border: 1px solid #2a2a2a;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.fullscreen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.animated-angular {
+    position: relative;
+    opacity: .7;
+    font-weight: lighter;
+    font-size: clamp(20rem, 45vmin, 8rem);
+    font-weight: 900;
+    font-family: sans-serif;
+    background-image: linear-gradient(45deg,
+            #db2777,
+            #3339d7,
+            #3b82f6,
+            #3339d7,
+            #db2777);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 30s linear infinite;
+}
+
+.animated-angular::after {
+    position: absolute;
+    top: 0.7em;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    content: "";
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            #000000 100%);
+
+}
+
+@keyframes gradientAnimation {
+    to {
+        background-position: -300% 0;
+    }
+}
+
+.uchat-slide-in {
+  position: absolute;
+  top: 100px;
+  right: 650px;
+  right: 1150px;
+  left: auto;
+  width: 400px;
+  height: 100%;
+  transform: translateY(-100%);
+  animation: slideInFromTop 0.5s forwards;
+  z-index: 9;
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  ;
+  }
+}
+
+.ram-indicator{
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    font-family: sans-serif;
+    left: 0;
+    z-index: 9999;
+}
